@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>Kidney | Amor pela vida</title>
+  </head>
+
+  <body>
+    <!--Barra de navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow p-1 mb-5 bg-white rounded">
+      <a class="navbar-brand" href="index.html"><img width="200" height="" src="assets/img/logo-site.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <section class="navbar-nav">
+          <a class="nav-item nav-link font-weight-bold" href="index.html">Início <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link font-weight-bold" href="sobre-rim.html">Sobre o rim</a>
+          <a class="nav-item nav-link active font-weight-bold" href="dicas-saude.html">Dicas de saúde</a>
+          <a class="nav-item nav-link font-weight-bold" data-toggle="modal" data-target="#modal-contato" href="#">Contato</a>
+        </section>
+      </div>
+    </nav>
+
+    <!--Conteúdo do site-->
+    <main class="container">
+
+      <h2 class="texto-inicial text-justify text-center">Temos 9 dicas para cuidar dos seus rins!</h2><hr>
+
+      <section class="dicas-container mt-5">
+        <article class="text-justify justify-content-sm-center">
+          <div class="dica-1 mb-5"></div>
+          <div class="dica-2 mb-5"></div>
+          <div class="dica-3 mb-5"></div>
+          <div class="dica-4 mb-5"></div>
+          <div class="dica-5 mb-5"></div>
+          <div class="dica-6 mb-5"></div>
+          <div class="dica-7 mb-5"></div>
+          <div class="dica-8 mb-5"></div>
+          <div class="dica-9 mb-5"></div>
+        </article> 
+      </section>
+    </main>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-contato">Entre em contato</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <section class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="nome-input">Nome completo</label>
+                    <input type="text" class="form-control" id="nome-input" placeholder="Insira seu nome completo">
+                  </div>
+                  <div class="form-group">
+                    <label for="email-input">Endereço de e-mail</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="nome@exemplo.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="txt-area">Deixe seu comentário</label>
+                    <textarea class="form-control" placeholder="Insira aqui seu comentário" id="txt-area" rows="3"></textarea>
+                  </div>
+                </form>
+              </section>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--Rodapé-->
+      <footer class="mt-5  text-dark p-3 bg-light text-primary m-0 text-center">
+          All rights reserved to Udy Team Developer &copy;
+      </footer>
+    </div>
+    
+    <!--Script de inserção de dados e bootstrap-->
+    <script src="assets/js/dicasSaude.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
